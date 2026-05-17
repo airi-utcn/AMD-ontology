@@ -1,1 +1,141 @@
-null
+{
+    "classes": {
+        "Disease": {
+            "description": "Top-level disease",
+            "subclasses": {
+                "AMD": {}
+            }
+        },
+        "AMD": {
+            "description": "Age-related macular degeneration",
+            "subclasses": {
+                "DryAMD": {},
+                "WetAMD": {}
+            }
+        },
+        "DryAMD": {
+            "description": "Dry age-related macular degeneration",
+            "subclasses": {
+                "GeographicAtrophy": {}
+            }
+        },
+        "WetAMD": {
+            "description": "Neovascular age-related macular degeneration",
+            "subclasses": {}
+        },
+        "GeographicAtrophy": {
+            "description": "Retinal cell death areas",
+            "subclasses": {}
+        },
+        "PathologicalFeature": {
+            "description": "Abnormal characteristics of AMD",
+            "subclasses": {
+                "Drusen": {},
+                "ChoroidalNeovascularization": {},
+                "RetinalPigmentEpitheliumDysfunction": {}
+            }
+        },
+        "Drusen": {
+            "description": "Yellow deposits under retina",
+            "subclasses": {}
+        },
+        "ChoroidalNeovascularization": {
+            "description": "Abnormal vessel growth",
+            "subclasses": {}
+        },
+        "RetinalPigmentEpitheliumDysfunction": {
+            "description": "RPE dysfunction",
+            "subclasses": {}
+        },
+        "GeneticMarker": {
+            "description": "AMD risk genes",
+            "subclasses": {}
+        },
+        "Treatment": {
+            "description": "AMD treatments",
+            "subclasses": {
+                "AntiVEGFTherapy": {},
+                "PhotodynamicTherapy": {},
+                "AREDSsupplements": {},
+                "LaserTherapy": {}
+            }
+        },
+        "AntiVEGFTherapy": {
+            "description": "Anti-VEGF agents",
+            "subclasses": {}
+        },
+        "PhotodynamicTherapy": {
+            "description": "Photodynamic therapy",
+            "subclasses": {}
+        },
+        "AREDSsupplements": {
+            "description": "AREDS/AREDS2 supplements",
+            "subclasses": {}
+        },
+        "LaserTherapy": {
+            "description": "Laser therapy",
+            "subclasses": {}
+        },
+        "DiagnosticMethod": {
+            "description": "AMD diagnostic methods",
+            "subclasses": {
+                "OpticalCoherenceTomography": {},
+                "FundusPhotography": {},
+                "FluoresceinAngiography": {},
+                "VisualAcuityTests": {}
+            }
+        },
+        "OpticalCoherenceTomography": {
+            "description": "OCT",
+            "subclasses": {}
+        },
+        "FundusPhotography": {
+            "description": "Fundus photography",
+            "subclasses": {}
+        },
+        "FluoresceinAngiography": {
+            "description": "Fluorescein angiography",
+            "subclasses": {}
+        },
+        "VisualAcuityTests": {
+            "description": "Visual acuity tests",
+            "subclasses": {}
+        }
+    },
+    "properties": {
+        "treats": {
+            "domain": "Treatment",
+            "range": "AMD",
+            "description": "Treats AMD"
+        },
+        "diagnoses": {
+            "domain": "DiagnosticMethod",
+            "range": "AMD",
+            "description": "Diagnoses AMD"
+        },
+        "associatedWith": {
+            "domain": "GeneticMarker",
+            "range": "AMD",
+            "description": "Associated with AMD"
+        }
+    },
+    "individuals": {
+        "AntiVEGFTherapy": {
+            "Ranibizumab": {},
+            "Aflibercept": {},
+            "Bevacizumab": {}
+        },
+        "GeneticMarker": {
+            "CFH": {},
+            "C3": {},
+            "C2": {},
+            "CFB": {},
+            "ARMS2": {},
+            "HTRA1": {},
+            "VEGF": {}
+        },
+        "PhotodynamicTherapy": {
+            "Verteporfin": {}
+        }
+    }
+}
