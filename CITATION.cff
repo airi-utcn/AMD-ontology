@@ -1,64 +1,42 @@
 cff-version: 1.2.0
-title: "LLMs4SchemaDiscovery: A Human-in-the-Loop Workflow for Scientific Schema Mining with Large Language Models"
-message: If you use this software, please cite the associated ESWC 2025 publication.
-type: conference-paper
+title: "Engineering an Ontology for Age-Related Macular Degeneration using Agentic AI and DL-Learner"
+message: "If you use this software or ontology, please cite the associated publication."
+type: software
 authors:
-  - given-names: Sameer
-    family-names: Sadruddin
-    email: sameer.sadruddin@tib.eu
-    affiliation: TIB Leibniz Information Centre for Science and Technology
-  - given-names: Jennifer
-    family-names: D'Souza
-    email: Jennifer.DSouza@tib.eu
-    affiliation: TIB Leibniz Information Centre for Science and Technology
-  - given-names: Eleni
-    family-names: Poupaki
-    email: e.poupaki@tue.nl
-    affiliation: Department of Applied Physics and Science Education, Eindhoven University of Technology
-  - given-names: Alex
-    family-names: Watkins
-    email: alex.watkins@warwick.ac.uk
-    affiliation: Warwick Computational and Theoretical Chemistry, University of Warwick
-  - given-names: Hamed
-    family-names: Babaei Giglou
-    email: hamed.babaei@tib.eu
-    affiliation: TIB Leibniz Information Centre for Science and Technology
-  - given-names: Anisa
-    family-names: Rula
-    email: anisa.rula@unibs.it
-    affiliation: University of Brescia
-  - given-names: Bora
-    family-names: Karasulu
-    email: Bora.Karasulu@warwick.ac.uk
-    affiliation: Warwick Computational and Theoretical Chemistry, University of Warwick
-  - given-names: Sören
-    family-names: Auer
-    email: auer@tib.eu
-    affiliation: TIB Leibniz Information Centre for Science and Technology
-  - given-names: Adrie
-    family-names: Mackus
-    email: A.J.M.Mackus@tue.nl
-    affiliation: Department of Applied Physics and Science Education, Eindhoven University of Technology
-  - given-names: Erwin
-    family-names: Kessels
-    email: w.m.m.kessels@tue.nl
-    affiliation: Department of Applied Physics and Science Education, Eindhoven University of Technology
-conference:
-  name: The Semantic Web – ESWC 2025
-  location: Heraklion, Crete, Greece
-  date: 2025-05-26
-publisher: Springer Nature Switzerland
-address: Cham
-pages: 244–261
-isbn: 978-3-031-94578-6
-doi: 10.1007/978-3-031-94578-6_14
-url: https://github.com/sciknoworg/schema-miner
+  - given-names: Calina Annemary
+    family-names: Borzan
+    affiliation: "Artificial Intelligence Research Institute AIRi@UTCN, Technical University of Cluj-Napoca, Romania"
+  - given-names: Alexandru
+    family-names: Lecu
+    affiliation: "Artificial Intelligence Research Institute AIRi@UTCN, Technical University of Cluj-Napoca, Romania"
+  - given-names: George Adrian
+    family-names: Muntean
+    affiliation: "Department of Ophthalmology, Iuliu Hatieganu University of Medicine and Pharmacy, Cluj-Napoca, Romania"
+  - given-names: Simona Delia
+    family-names: Nicoara
+    affiliation: "Department of Ophthalmology, Iuliu Hatieganu University of Medicine and Pharmacy, Cluj-Napoca, Romania"
+  - given-names: Adrian
+    family-names: Groza
+    affiliation: "Artificial Intelligence Research Institute AIRi@UTCN, Technical University of Cluj-Napoca, Romania"
+repository-code: "https://github.com/airi-utcn/AMD-ontology"
+url: "https://w3id.org/amd-ontology"
+abstract: >
+  A fully agentic pipeline for constructing and maintaining an OWL ontology
+  for Age-Related Macular Degeneration (AMD) from PubMed abstracts.
+  Three specialised LangChain agents handle literature discovery, incremental
+  knowledge extraction with delta validation, and ontology-wide quality assurance.
+  DL-Learner CELOE is used for axiom discovery across 17 learning problems.
+  The resulting ontology contains 11 classes, 104 individuals, and 114 triples,
+  with 77-81% UMLS alignment.
 keywords:
-  - Schema Discovery
-  - Schema Mining
-  - Scientific Schema
-  - Large Language Models
-  - Human-in-the-loop Workflow
+  - Age-Related Macular Degeneration
+  - Biomedical Ontology
+  - Agentic AI
+  - LangChain
+  - OWL
+  - DL-Learner
+  - Human-in-the-Loop
+  - Knowledge Graph
 license: MIT
 version: 1.0.0
-date-released: '2024'
+date-released: "2025-05-01"
